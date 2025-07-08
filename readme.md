@@ -12,6 +12,18 @@ I reverse engineered this by capturing the serial traffic between the sensor and
 
 Communication happens over RS485 using a **custom 7-byte command frame**, both for querying and configuring baud rate and slave ID.
 
+
+
+#### Default Configuration
+
+| Item      | Default Value |
+| --------- | ------------- |
+| Baud Rate | 4800          |
+| Slave ID  | 0x01          |
+| Data Bits | 8             |
+| Stop Bits | 1             |
+| Parity    | None          |
+
 ---
 
 ## Command Frame Format
