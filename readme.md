@@ -31,7 +31,7 @@ Communication happens over RS485 using a **custom 7-byte command frame**, both f
 | Byte Index | Description   | Notes                                                                                                    |
 | ---------- | ------------- | -------------------------------------------------------------------------------------------------------- |
 | 0–2        | Header        | Fixed sequence: `0xFD 0xFD 0xFD`                                                                         |
-| 3          | Baud Rate ID  | `0x00` = unspecified / no change<br>`0x01` = 2400 baud<br>`0x02` = 4800 baud<br>`0x03` = 9600 baud, etc. |
+| 3          | Baud Rate ID  | `0x00` = unspecified / no change<br>`0x01` = 2400 baud<br>`0x02` = 4800 baud<br>`0x03` = 9600 baud       |
 | 4          | Slave ID      | `0x00` = unspecified / no change<br>`0x01` - `0xFF` = Slave address                                      |
 | 5          | CRC Low Byte  | CRC16 (Modbus polynomial) low byte                                                                       |
 | 6          | CRC High Byte | CRC16 (Modbus polynomial) high byte                                                                      |
